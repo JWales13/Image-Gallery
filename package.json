@@ -1,0 +1,26 @@
+{
+  "name": "Weekend-Challenge-4",
+  "version": "1.0.0",
+  "description": "Gallery",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JWales13/Weekend-Challenge-4.git"
+  },
+  "keywords": [],
+  "author": "JW",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JWales13/Weekend-Challenge-4/issues"
+  },
+  "homepage": "https://github.com/JWales13/Weekend-Challenge-4#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "pg": "^7.4.0"
+  }
+}
