@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel='stylesheet' href="vendors/css/bootstrap.css">
-    <link rel="stylesheet" href='styles/style.css'>
+    <link rel="stylesheet" href="vendors/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/style.css">
     <script src="vendors/angular.js" ></script>
-    <script src='scripts/client.js'></script>
+    <script src="scripts/client.js"></script>
     <title>Gallery of My Life</title>
 </head>
 
-<body ng-controller='imageController as vm'>
+<body ng-controller="imageController as vm">
     <h1>The Gallery of My Life</h1>
+    
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-4" ng-repeat="image in vm.imagesArray">
+                <img ng-click=""  ng-src={{image.photo}} >
+                <div class="col-md-4"  >{{image.description}}</div>
+                <button class="btn btn-link" ng-click="count = count + 1" ng-init="count=0">
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                        <span> {{count}} </span>
+                    </button>
+            </div>
+        </div> 
+  </div> -->
+
+    
+    
     <div class="container">
             <div class="row">
               <div class="col-md-4" ng-repeat="image in vm.images">
-                    <div class="col-md-4" id = "descriptionDiv" ng-hide="vm.images.description">{{image.description}}</div>
-                    <img ng-src={{image.photo}} ng-click="vm.toggleImage()"><br/>
+                    <input type="checkbox" ng-model="showThis">
+                    <div  class="col-md-4" id = "descriptionDiv" ng-click="vm.onClick2(image)" ng-hide="vm.clicked">{{image.description}}</div>
+                    <img ng-src={{image.photo}} ng-show="vm.clicked" ng-click="vm.onClick(image)"><br/>
                     <button class="btn btn-link" ng-click="count = count + 1" ng-init="count=0">
                         <span class="glyphicon glyphicon-thumbs-up"></span>
                         <span> {{count}} </span>
