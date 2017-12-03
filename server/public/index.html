@@ -7,24 +7,25 @@
     <link rel='stylesheet' href="vendors/css/bootstrap.css">
     <link rel="stylesheet" href='styles/style.css'>
     <script src="vendors/angular.js" ></script>
-    <script src='scripts/clients.js'></script>
+    <script src='scripts/client.js'></script>
     <title>Gallery of My Life</title>
 </head>
+
 <body ng-controller='imageController as vm'>
     <h1>The Gallery of My Life</h1>
-
-    <div class='container'>
-        <row class='colspan-md-4'> <img src='images/beer.jpg' /> </row>
-        <row class='colspan-md-4'> <img src='images/perone.jpg' /> </row>
-        <row class='colspan-md-4'> <img src='images/bigGun.jpg' /> </row>
-    </div>
-
-    <div class='container'>
-            <row class='colspan-md-4'> <img src='images/gettingReady.jpg' /> </row>
-            <row class='colspan-md-4'> <img src='images/rightAfter.jpg' /> </row>
-            <row class='colspan-md-4'> <img src='images/moreAfter.jpg' /> </row>
+    <div class="container">
+            <div class="row">
+              <div class="col-md-4" ng-repeat="image in vm.images">
+                    <div class="col-md-4" id = "descriptionDiv" ng-hide="vm.images.description">{{image.description}}</div>
+                    <img ng-src={{image.photo}} ng-click="vm.toggleImage()"><br/>
+                    <button class="btn btn-link" ng-click="count = count + 1" ng-init="count=0">
+                        <span class="glyphicon glyphicon-thumbs-up"></span>
+                        <span> {{count}} </span>
+                    </button>
+              </div>
         </div>
-
-    
+    </div>
 </body>
 </html>
+
+

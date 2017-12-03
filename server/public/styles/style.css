@@ -1,0 +1,17 @@
+.row {
+    display: inline-block;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
+
+#descriptionDiv{
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    background-color: grey;
+    color: white;
+}
