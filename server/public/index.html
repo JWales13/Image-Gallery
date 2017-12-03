@@ -32,9 +32,9 @@
     <div class="container">
             <div class="row">
               <div class="col-md-4" ng-repeat="image in vm.images">
-                    <input type="checkbox" ng-model="showThis">
-                    <div  class="col-md-4" id = "descriptionDiv" ng-click="vm.onClick2(image)" ng-hide="vm.clicked">{{image.description}}</div>
-                    <img ng-src={{image.photo}} ng-show="vm.clicked" ng-click="vm.onClick(image)"><br/>
+                    <!-- <input type="checkbox" ng-model="showThis"> -->
+                    <div  class="col-md-4" id = "descriptionDiv"  ng-show="showDetails" ng-click="showDetails = ! showDetails">{{image.description}}</div>
+                    <img ng-src={{image.photo}}  ng-click="showDetails = ! showDetails"  ng-hide="showDetails"><br/>
                     <button class="btn btn-link" ng-click="count = count + 1" ng-init="count=0">
                         <span class="glyphicon glyphicon-thumbs-up"></span>
                         <span> {{count}} </span>
