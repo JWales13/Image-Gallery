@@ -42,7 +42,7 @@ app.controller('imageController', ['$http', function ($http) {
     };
     
     image8={
-        photo: './images/jamie-spain.jpg',
+        photo: './images/jaime-spain.jpg',
         description: 'My good friend Jamie came to bike around spain with me'
     };
 

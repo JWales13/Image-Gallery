@@ -5,18 +5,36 @@
 img {
     height: 300px;
     width: 300px;
-    padding: 10px;
+    padding: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 #descriptionDiv{
-    height: 250px;
-    width: 250px;
-    padding: 20px;
+    height: 300px;
+    width: 300px;
     background-color: grey;
     color: white;
+    text-align: center;
+    padding: 90px;
+    opacity: 0.5;
+    border-style: solid;
+    border-color: #5bc0de;
 }
 
 h1{
     text-align: center;
     padding: 20px;
+    font-family: Courier New, Courier, monospace;
+    color: #5bc0de;
+}
+
+body{
+    background-color: #E8E8E8;
+}
+
+#repeatDiv {
+    padding: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }

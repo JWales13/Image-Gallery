@@ -15,16 +15,16 @@
     <h1>Travel Gallery</h1>
     
     <div class="container">
-            <div class="row">
-              <div class="col-md-4" ng-repeat="image in vm.images">
+            <!-- <div class="row"> -->
+              <div id="repeatDiv" class="col-md-4" ng-repeat="image in vm.images">
                     <div   id = "descriptionDiv"  ng-show="showDetails" ng-click="showDetails = ! showDetails">{{image.description}}</div>
-                    <img  ng-src={{image.photo}} class="img-thumbnail" ng-click="showDetails = ! showDetails"  ng-hide="showDetails"><br/>
+                    <img  ng-src={{image.photo}} class="img-thumbnail" ng-click="showDetails = ! showDetails"  ng-hide="showDetails">
                     <button class="btn btn-link" ng-click="count = count + 1" ng-init="count=0">
                         <span class="glyphicon glyphicon-thumbs-up"></span>
                         <span> {{count}} </span>
                     </button>
               </div>
-        </div>
+        <!-- </div> -->
     </div>
 </body>
 </html>
