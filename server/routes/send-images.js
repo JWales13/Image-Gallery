@@ -32,23 +32,60 @@ image6={
     description: 'Probably should not have had that beer, adrenaline crashed and I passed out and ended up spending night in hospital'
 };
 
+image7={
+    photo: './images/after-accident.jpg',
+    description: 'reminder to always practice bike safety'
+};
 
-self.images = [
+image8={
+    photo: './images/jaime-spain.jpg',
+    description: 'My good friend Jamie came to bike around spain with me'
+};
+
+image9={
+    photo: './images/rome.jpg',
+    description: 'Great View of the Colosseum'
+};
+
+image10={
+    photo: './images/paris.jpg',
+    description: 'My sister and I visiting paris a long time ago.  I miss my hair'
+};
+
+image11={
+    photo: './images/hiking.jpg',
+    description: 'Hiking trip around Cali with the guys'
+};
+
+image12={
+    photo: './images/pig.jpg',
+    description: "Got a shot with Roger Water's inflatable pig at Desert Trip"
+};
+
+
+
+images = [
     image1,
     image2,
     image3,
     image4,
     image5,
-    image6
+    image6,
+    image7,
+    image8,
+    image9,
+    image10,
+    image11,
+    image12
 ];
 
 
-router.get('/images', function(req,res){
-    res.send(images.photo);
+
+router.get('/', function(req,res){
+    console.log('got data');
+    res.send(images);
 })
 
-router.get('/descriptions', function(req,res){
-    res.send(images.descriptions);
-})
+
 
 module.exports = router;
