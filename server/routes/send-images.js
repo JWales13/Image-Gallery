@@ -82,7 +82,6 @@ images = [
 
 
 router.get('/', function(req,res){
-    console.log('got data');
     res.send(images);
 })
 
