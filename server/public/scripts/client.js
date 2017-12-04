@@ -36,6 +36,37 @@ app.controller('imageController', ['$http', function ($http) {
         description: 'Probably should not have had that beer, adrenaline crashed and I passed out and ended up spending night in hospital'
     };
     
+    image7={
+        photo: './images/after-accident.jpg',
+        description: 'reminder to always practice bike safety'
+    };
+    
+    image8={
+        photo: './images/jamie-spain.jpg',
+        description: 'My good friend Jamie came to bike around spain with me'
+    };
+
+    image9={
+        photo: './images/rome.jpg',
+        description: 'Great View of the Colosseum'
+    };
+
+    image10={
+        photo: './images/paris.jpg',
+        description: 'My sister and I visiting paris a long time ago.  I miss my hair'
+    };
+
+    image11={
+        photo: './images/hiking.jpg',
+        description: 'Hiking trip around Cali with the guys'
+    };
+
+    image12={
+        photo: './images/pig.jpg',
+        description: "Got a shot with Roger Water's inflatable pig at Desert Trip"
+    };
+    
+    
     
     self.images = [
         image1,
@@ -43,33 +74,17 @@ app.controller('imageController', ['$http', function ($http) {
         image3,
         image4,
         image5,
-        image6
+        image6,
+        image7,
+        image8,
+        image9,
+        image10,
+        image11,
+        image12
     ];
 
-    self.onClick = function(image){
-        console.log('image was clicked');
-        console.log('image: ', image.description);
-        return this.clicked = false;
-
-    };
-
-    self.onClick2 = function(image){
-        console.log('description was clicked');
-        console.log('image: ', image.description);
-        return this.clicked = true;
-    };
-
-
-    // self.text = false;
-    
-    // self.myFunction = function(image){
-    //     console.log('image: ', image.description);
-    //     // self.text = !self.text;
-    //     self.imgText = image.description;
-    // }
 
 }]);    
 
 
-// var myEl = angular.element( document.querySelector( '#divID' ) );
-// myEl.append('Hi<br/>');     
+  

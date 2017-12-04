@@ -12,29 +12,13 @@
 </head>
 
 <body ng-controller="imageController as vm">
-    <h1>The Gallery of My Life</h1>
-    
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-md-4" ng-repeat="image in vm.imagesArray">
-                <img ng-click=""  ng-src={{image.photo}} >
-                <div class="col-md-4"  >{{image.description}}</div>
-                <button class="btn btn-link" ng-click="count = count + 1" ng-init="count=0">
-                        <span class="glyphicon glyphicon-thumbs-up"></span>
-                        <span> {{count}} </span>
-                    </button>
-            </div>
-        </div> 
-  </div> -->
-
-    
+    <h1>Travel Gallery</h1>
     
     <div class="container">
             <div class="row">
               <div class="col-md-4" ng-repeat="image in vm.images">
-                    <!-- <input type="checkbox" ng-model="showThis"> -->
-                    <div  class="col-md-4" id = "descriptionDiv"  ng-show="showDetails" ng-click="showDetails = ! showDetails">{{image.description}}</div>
-                    <img ng-src={{image.photo}}  ng-click="showDetails = ! showDetails"  ng-hide="showDetails"><br/>
+                    <div   id = "descriptionDiv"  ng-show="showDetails" ng-click="showDetails = ! showDetails">{{image.description}}</div>
+                    <img  ng-src={{image.photo}} class="img-thumbnail" ng-click="showDetails = ! showDetails"  ng-hide="showDetails"><br/>
                     <button class="btn btn-link" ng-click="count = count + 1" ng-init="count=0">
                         <span class="glyphicon glyphicon-thumbs-up"></span>
                         <span> {{count}} </span>

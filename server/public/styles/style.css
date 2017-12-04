@@ -5,7 +5,7 @@
 img {
     height: 300px;
     width: 300px;
-    padding: 20px;
+    padding: 10px;
 }
 
 #descriptionDiv{
@@ -14,4 +14,9 @@ img {
     padding: 20px;
     background-color: grey;
     color: white;
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
 }
