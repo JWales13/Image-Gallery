@@ -2,8 +2,6 @@ var app = angular.module('galleryApp', []);
 
 app.controller('imageController', ['$http', function ($http) {
     var self = this;
-    self.clicked= !self.clicked;
-    
     self.images=[];
     self.getImages = function () {
         $http({
